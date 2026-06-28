@@ -12,7 +12,7 @@ const EsquemaProduto = new mongoose.Schema({
 }, { versionKey: false })
 
 // 2. Transformar em modelo (permite find, save etc.)
-const produto = mongoose.model("produto", EsquemaProduto)
+const Produto = mongoose.model("Produto", EsquemaProduto)
 
 // 3. Exportar para usar nas rotas
-export { produto }
+export default Produto
